@@ -104,6 +104,7 @@ $(document).ready(function() {
     }
 
     function pomeriZmijicuPojeo(coor){
+        zmijicaPolja.push(0);
         for(let i = zmijicaPolja.length; i > 0; i--){
             zmijicaPolja[i] = zmijicaPolja[i - 1];
         }
