@@ -1,0 +1,233 @@
+
+.skriveno{
+  display: none;
+}
+
+.h3naslov{
+  font-weight: bold;
+  text-align: center;
+}
+
+#naslov{
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+.glitch-text {
+    /* color: #fab730; */
+    color: rgb(255, 240, 23);
+    background-color: rgb(73, 140, 202);
+    /* animation: glitch 1s infinite; */
+  }
+  
+  /* @keyframes glitch {
+    0% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    5% {
+      -webkit-transform: skew(-0.5deg, -0.9deg);
+      transform: skew(-0.5deg, -0.9deg);
+      -webkit-filter: contrast(108%) brightness(104%);
+      filter: contrast(108%) brightness(104%);
+    }
+    10% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    15% {
+      -webkit-transform: skew(0.8deg, -0.1deg);
+      transform: skew(0.8deg, -0.1deg);
+      -webkit-filter: contrast(108%) brightness(96%);
+      filter: contrast(108%) brightness(96%);
+    }
+    20% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    25% {
+      -webkit-transform: skew(-1deg, -0.4deg);
+      transform: skew(-1deg, -0.4deg);
+      -webkit-filter: contrast(108%) brightness(102%);
+      filter: contrast(108%) brightness(102%);
+    }
+    30% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    35% {
+      -webkit-transform: skew(0.6deg, -0.1deg);
+      transform: skew(0.6deg, -0.1deg);
+      -webkit-filter: contrast(108%) brightness(108%);
+      filter: contrast(108%) brightness(108%);
+    }
+    40% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    45% {
+      -webkit-transform: skew(-0.3deg, -0.6deg);
+      transform: skew(-0.3deg, -0.6deg);
+      -webkit-filter: contrast(108%) brightness(104%);
+      filter: contrast(108%) brightness(104%);
+    }
+    50% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    55% {
+      -webkit-transform: skew(0.7deg, -0.2deg);
+      transform: skew(0.7deg, -0.2deg);
+      -webkit-filter: contrast(108%) brightness(100%);
+      filter: contrast(108%) brightness(100%);
+    }
+    60% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    65% {
+      -webkit-transform: skew(-0.2deg, -0.8deg);
+      transform: skew(-0.2deg, -0.8deg);
+      -webkit-filter: contrast(108%) brightness(96%);
+      filter: contrast(108%) brightness(96%);
+    }
+    70% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    75% {
+      -webkit-transform: skew(1deg, -0.3deg);
+      transform: skew(1deg, -0.3deg);
+      -webkit-filter: contrast(108%) brightness(102%);
+      filter: contrast(108%) brightness(102%);
+    }
+    80% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    85% {
+      -webkit-transform: skew(-0.4deg, -0.7deg);
+      transform: skew(-0.4deg, -0.7deg);
+      -webkit-filter: contrast(108%) brightness(108%);
+      filter: contrast(108%) brightness(108%);
+    }
+    90% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+    95% {
+      -webkit-transform: skew(0.4deg, -0.3deg);
+      transform: skew(0.4deg, -0.3deg);
+      -webkit-filter: contrast(108%) brightness(100%);
+      filter: contrast(108%) brightness(100%);
+    }
+    100% {
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none;
+    }
+  } */
+
+#tekstIznadTabele, #dugmePokreniDiv{
+    margin:20px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} 
+
+#pocetni{
+  margin: 40px;
+}
+
+body{
+    background-image: url("zmijica-dodatno/brandma-snake-game.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Arcade Classic", cursive;
+    font-size: 24px;
+}
+
+.table-container {
+    max-width: 70vh;
+    max-height: 70vh;
+}
+
+table {
+    width: 70vh;
+    height: 70vh;
+    border: none;
+}
+
+td {
+    width: var(--cell-width);
+    height: var(--cell-height);
+    position: relative;
+}
+
+td::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* Adjust aspect ratio as needed */
+}
+
+.circle{
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.circleSuper{
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.btn{
+    width: auto;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table#tabela tr:nth-child(2n) td:nth-child(2n),
+table#tabela tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background-color: #239110; /* Light color for alternating cells */
+}
+
+table#tabela tr:nth-child(2n+1) td:nth-child(2n),
+table#tabela tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: #36dd3b; /* Dark color for alternating cells */
+}
